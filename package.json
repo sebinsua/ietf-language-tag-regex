@@ -1,0 +1,44 @@
+{
+  "name": "ietf-language-tag-regex",
+  "version": "0.0.1",
+  "description": "Regular expressions for matching IETF language tags (BCP 47)",
+  "main": "index.js",
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "prepush": "npm -s test",
+    "test": "npm run -s test:lint",
+    "test:lint": "standard | snazzy",
+    "push": "git push --follow-tags origin master",
+    "release": "npm run push && standard-version && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sebinsua/ietf-language-tag-regex.git"
+  },
+  "keywords": [
+    "ietf",
+    "language",
+    "tags",
+    "bcp 47",
+    "bcp"
+  ],
+  "author": "Seb Insua <me@sebinsua.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebinsua/ietf-language-tag-regex/issues"
+  },
+  "homepage": "https://github.com/sebinsua/ietf-language-tag-regex#readme",
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "xregexp": "^3.1.1"
+  },
+  "devDependencies": {
+    "husky": "^0.13.1",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.0",
+    "standard-version": "^4.0.0",
+    "validate-commit-msg": "^2.11.1"
+  }
+}
