@@ -1,6 +1,6 @@
 {
   "name": "ietf-language-tag-regex",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Regular expressions for matching IETF language tags (BCP 47)",
   "main": "index.js",
   "scripts": {
