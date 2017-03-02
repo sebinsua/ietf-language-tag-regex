@@ -26,6 +26,6 @@ Returns a regex for matching IETF language tags.
 ##### exact
 
 Type: `boolean`<br>
-Default: `false`
+Default: `true`
 
 Only match an exact string. Useful with `RegExp#test` to check if a string is a language tag.
