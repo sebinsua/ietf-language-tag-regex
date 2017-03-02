@@ -11,7 +11,9 @@ Based on this [Stack Overflow comment](http://stackoverflow.com/a/7036171) by Ge
 
 const languageTagRegex = require('ietf-language-tag-regex')
 
-languageTagRegex().test('en-GB') // true
+languageTagRegex().test('en-GB')   // true
+languageTagRegex().test('a-DE')    // false
+languageTagRegex().test('zh-Hant') // true
 
 ```
 
