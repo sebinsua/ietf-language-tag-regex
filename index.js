@@ -15,7 +15,7 @@ const language = '(?<language>([A-Za-z]{2,3}(-' + extlang + ')?)|[A-Za-z]{4}|[A-
 const langtag = '(' + language + '(-' + script + ')?' + '(-' + region + ')?' + '(-' + variant + ')*' + '(-' + extension + ')*' + '(-' + privateUse + ')?' + ')'
 const languageTag = '(' + grandfathered + '|' + langtag + '|' + privateUse2 + ')'
 
-const createLanguageTagRegex = ({ exact = true }) =>
+const createLanguageTagRegex = ({ exact = true } = {}) =>
   exact ? createRegExp('^' + languageTag + '$') : createRegExp(languageTag, 'g')
 
 module.exports = createLanguageTagRegex
